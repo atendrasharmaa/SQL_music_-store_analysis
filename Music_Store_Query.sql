@@ -140,7 +140,6 @@ Write a query that returns the country along with the top customer and how much 
 For countries where the top amount spent is shared, provide all customers who spent this amount. */
 
 
-/* Method 1: using CTE */
 
 WITH Customter_with_country AS (
 		SELECT customer.customer_id,first_name,last_name,billing_country,SUM(total) AS total_spending,
